@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <div class="card-holder">
+<mat-card *ngFor="let pokemon of pokemonList">
+    <img mat-card-img src="{{pokemon.pic}}">
+    <mat-card-title>{{pokemon.name}}</mat-card-title>
+<mat-card-subtitle>Pokedex Number: {{pokemon.number}}</mat-card-subtitle>
+   <ul>
+    <li>weight: {{pokemon.weight}}</li>
+    <li>height: {{pokemon.height}}</li>
+    <li>Type: {{pokemon.type}}</li>
+   </ul>
+</mat-card>
+</div>
+</div>
