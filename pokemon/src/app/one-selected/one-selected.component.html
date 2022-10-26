@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <div class="card-holder">
+<mat-card  >
+    <img mat-card-img src="{{selectedPokemon.pic}}" >
+    <mat-card-title >{{selectedPokemon.name}}</mat-card-title>
+<mat-card-subtitle>Pokedex Number: {{selectedPokemon.number}}</mat-card-subtitle>
+   <ul>
+    <li>weight: {{selectedPokemon.weight}}</li>
+    <li>height: {{selectedPokemon.height}}</li>
+    <li>Type: {{selectedPokemon.type}}</li>
+   </ul>
+   <button mat-raised-button routerLink="home">Reselect</button>
+</mat-card>
+</div>
+</div>
+

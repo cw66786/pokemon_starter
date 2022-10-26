@@ -40,7 +40,7 @@ export class HomepageComponent implements OnInit {
   openPopUp(name: string,img: string){ 
      this.clickedName = name;
      this.clickedPic = img;
-    console.log(this.clickedPic)
+    
     this.popUp.open(PopupComponent,{
 
       data: {

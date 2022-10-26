@@ -12,12 +12,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PopupComponent } from './popup/popup.component';
+import { OneSelectedComponent } from './one-selected/one-selected.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    PopupComponent
+    PopupComponent,
+    OneSelectedComponent
   ],
   imports: [
     BrowserModule,

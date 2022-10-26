@@ -1,7 +1,7 @@
 <div class="wrapper">
     <img src="{{selectedPic}}" >
     <p>Would you like to select {{selectedName}}?</p>
-    <button mat-raised-btn>No</button>
-    <button mat-raised-btn>Yes</button>
+    <button mat-raised-btn mat-dialog-close>No</button>
+    <button mat-raised-btn (click)="selectPokemon()"  routerLink="/one" mat-dialog-close>Yes</button>
 
 </div>

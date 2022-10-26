@@ -11,7 +11,9 @@ import { BehaviorSubject } from 'rxjs';
 export class CatchEmAllService {
 baseUrl: string = 'https://pokeapi.co/api/v2/pokemon/';
 
-
+private selected: string = "";
+private $nameBehave = new BehaviorSubject<string>(this.selected);
+$name = this.$nameBehave.asObservable();
 
   constructor(private http: HttpClient) { }
 
@@ -32,6 +34,15 @@ baseUrl: string = 'https://pokeapi.co/api/v2/pokemon/';
         return current;
       })
     )
+  }
+
+
+  getSelected(selectedPokemon: string){
+    console.log(selectedPokemon, "input")
+    this.selected = selectedPokemon;
+    console.log(this.selected)
+    this.$nameBehave.next(this.selected);
+    
   }
 
 }
